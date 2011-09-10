@@ -7,9 +7,10 @@ import os
 import sys
 import towbar
 
-from distutils.core import setup
-
-requires = ["requests"]
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
 def publish():
     """ Publish to PyPi"""
@@ -27,7 +28,7 @@ setup(name = "towbar",
       author_email = "d@unwiredcouch.com",
       url = "https://github.com/mrtazz/towbar",
       packages = ["towbar"],
-      install_requires=requires,
+      install_requires = ["requests >= 0.6.1"],
       license = "MIT",
       classifiers = (
           "Development Status :: 4 - Beta",
