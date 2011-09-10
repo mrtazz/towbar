@@ -1,0 +1,7 @@
+*.pyc
+build
+dist
+docs/_build
+.coverage
+.tox/*
+*.xml
