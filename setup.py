@@ -5,7 +5,6 @@
 '''
 import os
 import sys
-import towbar
 
 try:
     from setuptools import setup
@@ -21,14 +20,14 @@ if sys.argv[-1] == "publish":
     sys.exit()
 
 setup(name = "towbar",
-      version = towbar.__version__,
+      version = "0.1.2",
       description = "Python library for the boxcar.io API",
       long_description = (open("README.rst").read() + "\n\n" + open("HISTORY.rst").read()),
       author = "Daniel Schauenberg",
       author_email = "d@unwiredcouch.com",
       url = "https://github.com/mrtazz/towbar",
       packages = ["towbar"],
-      install_requires = ["requests >= 0.6.1"],
+      install_requires = ["requests>=0.6.1"],
       license = "MIT",
       classifiers = (
           "Development Status :: 4 - Beta",

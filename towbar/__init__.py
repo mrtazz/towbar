@@ -3,7 +3,7 @@
 from towbar import Towbar
 
 __author__ = "Daniel Schauenberg"
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 __license__ = "MIT"
 
 def notify_myself(user, password, message='', sender='towbar', source_url=None,
