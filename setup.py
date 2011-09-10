@@ -20,7 +20,7 @@ if sys.argv[-1] == "publish":
     sys.exit()
 
 setup(name = "towbar",
-      version = "0.1.1",
+      version = "0.1.2",
       description = "Python library for the boxcar.io API",
       long_description = (open("README.rst").read() + "\n\n" + open("HISTORY.rst").read()),
       author = "Daniel Schauenberg",
