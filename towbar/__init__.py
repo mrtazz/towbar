@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from towbar import Towbar
+from .towbar import Towbar
 
 __author__ = "Daniel Schauenberg"
 __version__ = "0.1.2"
